@@ -7,14 +7,17 @@
     font-family: '微軟正黑體', 'Arial';
     letter-spacing: 2px;
 }
-.transition{
-    transition:all .5s;
+
+.transition {
+    transition: all .5s;
 }
-.btn:focus{
+
+.btn:focus {
     /*取消bootstrap預設*/
     /*outline: none;*/
-    box-shadow:none;
+    box-shadow: none;
 }
+
 ol, ul, li {
     list-style: none;
 }
@@ -30,12 +33,15 @@ h1 {
 .aColorFFF:hover {
     color: #0dc5b9;
 }
-.pColorGreen{
-    color:#0dc5b9;
+
+.pColorGreen {
+    color: #0dc5b9;
 }
-.pColorBlack{
-    color:#000;
+
+.pColorBlack {
+    color: #000;
 }
+
 /*----------section welcome----------*/
 section.welcome {
     background: url("https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/1/photo-1456086272160-b28b0645b729_jljvrz.jpg") no-repeat 50% 50% fixed;
@@ -109,7 +115,7 @@ section.about {
 
 /*----------section shop----------*/
 section.shop {
-    padding:60px 0 20px 0;
+    padding: 60px 0 20px 0;
 }
 
 .shopTitle h2 {
@@ -119,70 +125,82 @@ section.shop {
 .shopTitle p {
     color: #0dc5b9;
 }
-.productBox{
-    border:1px solid rgba(0,0,0,.3);
+
+.productBox {
+    border: 1px solid rgba(0, 0, 0, .3);
 }
-.productInfor>h5{
-    color:#000;
+
+.productInfor > h5 {
+    color: #000;
     text-align: justify;
-    font-size:18px ;
-}
-.productInfor>span{
-    display: block;
-    color:#0dc5b9;
-    padding:0 0 10px 0;
     font-size: 18px;
 }
-.productInfor>p{
-    color:#666;
+
+.productInfor > span {
+    display: block;
+    color: #0dc5b9;
+    padding: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.productInfor > p {
+    color: #666;
     font-size: 14px;
 }
-.quantity{
+
+.quantity {
     padding-bottom: 10px;
     border-bottom: 1px solid #666;
 }
-.floatL>i{
-    padding:0 10px;
+
+.floatL > i {
+    padding: 0 10px;
     text-align: right;
-    color:#666;
+    color: #666;
     font-size: 20px;
 }
-.quantity>label{
+
+.quantity > label {
     margin: 0;
-    color:#666;
+    color: #666;
     font-size: 16px;
 }
-.floatL>input{
+
+.floatL > input {
     font-size: 20px;
-    color:#666;
+    color: #666;
     width: 60px;
     border: none;
 }
-.addCart{
+
+.addCart {
     width: 100%;
     background-color: #0dc5b9;
-    color:#fff;
+    color: #fff;
     letter-spacing: 3px;
 }
-.addCart:hover{
-    color:#fff;
+
+.addCart:hover {
+    color: #fff;
     background-color: #0d9f93;
 }
-.productBottomBox{
+
+.productBottomBox {
     border: none;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 /*----------section contact----------*/
-section.contact{
-    background:url("../images/contactbg.webp")no-repeat 50% 50% fixed;
-    background-size:cover ;
+section.contact {
+    background: url("../images/contactbg.webp") no-repeat 50% 50% fixed;
+    background-size: cover;
     position: relative;
-    padding:50px 0;
+    padding: 50px 0;
 
 }
+
 .contact:before {
-    background: rgba(9,10,12,.4);
+    background: rgba(9, 10, 12, .4);
     content: "";
     display: block;
     height: 100%;
@@ -192,23 +210,22 @@ section.contact{
     transform: translateZ(0);
     width: 100%;
 }
-.contactText>p, .contactText>h2{
-    position:relative;
+
+.contactText > p, .contactText > h2 {
+    position: relative;
     line-height: 36px;
 }
 
-
 /*----------footer----------*/
-footer{
+footer {
     font-size: 14px;
-    letter-spacing:2px ;
-    padding:10px;
-    color:#666666;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #666666;
 }
 
-
 /*----------*/
-.fixCartBtn{
+.fixCartBtn {
     background: #0ed9cc;
     border-radius: 100px;
     cursor: pointer;
@@ -222,13 +239,25 @@ footer{
     top: 20px;
     z-index: 220;
 }
-.fixCartBtnBox>i{
-    padding-right:8px;
-}
-.fixCartBtnBox>span{
-    padding-right:5px;
+
+.fixCartBtnBox > i {
+    padding-right: 8px;
 }
 
+.fixCartBtnBox > span {
+    padding-right: 5px;
+}
+
+.asideList {
+    background: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    /*right: 0;*/
+    right: -400px;
+    z-index: 10;
+}
 
 
 

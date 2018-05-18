@@ -5,11 +5,8 @@
     margin: 0;
     color: #fff;
     font-family: '微軟正黑體', 'Arial';
-    letter-spacing: 2px;
 }
-.transition{
-    transition:all .5s;
-}
+
 .btn:focus{
     /*取消bootstrap預設*/
     /*outline: none;*/

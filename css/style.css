@@ -106,7 +106,7 @@ section.about {
 
 /*----------section shop----------*/
 section.shop {
-    padding:80px 0;
+    padding:60px 0 20px 0;
 }
 
 .shopTitle h2 {
@@ -171,9 +171,60 @@ section.shop {
 }
 
 /*----------section contact----------*/
+section.contact{
+    background:url("../images/contactbg.webp")no-repeat 50% 50% fixed;
+    background-size:cover ;
+    position: relative;
+    padding:50px 0;
+
+}
+.contact:before {
+    background: rgba(9,10,12,.4);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    width: 100%;
+}
+.contactText>p, .contactText>h2{
+    position:relative;
+    line-height: 36px;
+}
 
 
+/*----------footer----------*/
+footer{
+    font-size: 14px;
+    letter-spacing:2px ;
+    padding:10px;
+    color:#666666;
+}
 
+
+/*----------*/
+.fixCartBtn{
+    background: #0ed9cc;
+    border-radius: 100px;
+    cursor: pointer;
+    height: 44px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 2px 17px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    z-index: 220;
+}
+.fixCartBtnBox>i{
+    padding-right:8px;
+}
+.fixCartBtnBox>span{
+    padding-right:5px;
+}
 
 
 

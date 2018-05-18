@@ -7,6 +7,11 @@
     font-family: '微軟正黑體', 'Arial';
 }
 
+.btn:focus{
+    /*取消bootstrap預設*/
+    /*outline: none;*/
+    box-shadow:none;
+}
 ol, ul, li {
     list-style: none;
 }
@@ -111,10 +116,61 @@ section.shop {
 .shopTitle p {
     color: #0dc5b9;
 }
+.productBox{
+    border:1px solid rgba(0,0,0,.3);
+}
+.productInfor>h5{
+    color:#000;
+    text-align: justify;
+    font-size:18px ;
+}
+.productInfor>span{
+    display: block;
+    color:#0dc5b9;
+    padding:0 0 10px 0;
+    font-size: 18px;
+}
+.productInfor>p{
+    color:#666;
+    font-size: 14px;
+}
+.quantity{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+}
+.floatL>i{
+    padding:0 10px;
+    text-align: right;
+    color:#666;
+    font-size: 20px;
+}
+.quantity>label{
+    margin: 0;
+    color:#666;
+    font-size: 16px;
+}
+.floatL>input{
+    font-size: 20px;
+    color:#666;
+    width: 60px;
+    border: none;
+}
+.addCart{
+    width: 100%;
+    background-color: #0dc5b9;
+    color:#fff;
+    letter-spacing: 3px;
+}
+.addCart:hover{
+    color:#fff;
+    background-color: #0d9f93;
+}
+.productBottomBox{
+    border: none;
+    background-color:#ffffff;
+}
 
-
-
-
+/*----------section contact----------*/
 
 
 

@@ -167,16 +167,16 @@
                                 大型蔬果箱/保鮮室設計
                             </p>
                             <div class="quantity d-flex align-items-center justify-content-between">
-                                <label for="quantity">數量</label>
+                                <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="fas fa-minus"></i>
-                                    <input id="quantity" class="text-center" type="text" value="1" maxlength="3">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="minus fas fa-minus"></i>
+                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
+                                    <i class="plus fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" id="addCart" class="btn addCart">加入購物車</a>
+                            <a href="" class="btn addCart">加入購物車</a>
                         </div>
                     </div>
                 </div>
@@ -197,9 +197,9 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="fas fa-minus"></i>
-                                    <input class="text-center" type="text" value="1" maxlength="3">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="minus fas fa-minus"></i>
+                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
+                                    <i class="plus fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
@@ -225,9 +225,9 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="fas fa-minus"></i>
-                                    <input id="" class="text-center" type="text" value="1" maxlength="3">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="minus fas fa-minus"></i>
+                                    <input id="" class="quantity text-center" type="text" value="1" maxlength="3">
+                                    <i class="plus fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
@@ -253,9 +253,9 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="fas fa-minus"></i>
-                                    <input class="text-center" type="text" value="1" maxlength="3">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="minus fas fa-minus"></i>
+                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
+                                    <i class="plus fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
@@ -281,9 +281,9 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="fas fa-minus"></i>
-                                    <input class="text-center" type="text" value="1" maxlength="3">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="minus fas fa-minus"></i>
+                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
+                                    <i class="plus fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
@@ -309,9 +309,9 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="fas fa-minus"></i>
-                                    <input class="text-center" type="text" value="1" maxlength="3">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="minus fas fa-minus"></i>
+                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
+                                    <i class="plus fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
@@ -364,10 +364,14 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
 
 <script>
 
-    let carBtnClickHanlder = function () {
+    let cartBtnClickHanlder = function () {
         let duration = 500;
         let asideList = $('#asideList');
         let asideListWidth = asideList.css('width');
@@ -382,69 +386,116 @@
             }, duration);
         }
     };
-    $('#fixCartBtn').on('click', carBtnClickHanlder);
+    $('#fixCartBtn').on('click', cartBtnClickHanlder);
 
     //who => 加減號
     //when => click
     //what => 按減 -1 , 按加 +1
-    let quantity = $('#quantity');
-    let minus = $('.floatL').find('i:first-child');
-    let plus = $('.floatL').find('i:last-child');
+
     let minusClickHandler = function () {
+        let quantity = $(this).parent().find('.quantity');
+
         if (parseInt(quantity.val()) > 1) {
-            quantity.val(parseInt(quantity.val()) - 1)
+            quantity.val(parseInt(quantity.val()) - 1);
         } else {
-            minus.attr('disabled', 'disabled').css('color', '#b9b9b9')
+            $(this).attr('disabled', 'disabled').css('color', '#b9b9b9')
         }
     };
     let plusClickHandler = function () {
+        let quantity = $(this).parent().find('.quantity');
         quantity.val(parseInt(quantity.val()) + 1);
-        minus.removeAttr('disabled').css('color', '#666');
+        $(this).parent().find('.minus').removeAttr('disabled').css('color', '#666');
     };
 
 
-    minus.on('click', minusClickHandler);
-    plus.on('click', plusClickHandler);
+    $('.minus').on('click', minusClickHandler);
+    $('.plus').on('click', plusClickHandler);
 
     /*--畫面滑動--*/
 
-    $('#btnWelcome').click(function(){
-        $('html,body').animate({scrollTop:$('#welcome').offset().top},1000);
+    $('#btnWelcome').click(function () {
+        $('html,body').animate({scrollTop: $('#welcome').offset().top}, 1000);
     });
-    $('#btnAbout').click(function(){
-        $('html,body').animate({scrollTop:$('#about').offset().top-200},1000);
+    $('#btnAbout').click(function () {
+        $('html,body').animate({scrollTop: $('#about').offset().top - 200}, 1000);
     });
-    $('#btnShop').click(function(){
-        $('html,body').animate({scrollTop:$('#shop').offset().top},1000);
+    $('#btnShop').click(function () {
+        $('html,body').animate({scrollTop: $('#shop').offset().top}, 1000);
     });
-    $('#btnContact').click(function(){
-        $('html,body').animate({scrollTop:$('#contact').offset().top},1000);
+    $('#btnContact').click(function () {
+        $('html,body').animate({scrollTop: $('#contact').offset().top}, 1000);
     });
-
-
 
 
     let headerNav = $('#headerNav');
 
 
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         let scrollNow = $(window).scrollTop();
         // console.log(scrollNow);
 
-        if(scrollNow >= 500){
+        if (scrollNow >= 500) {
             headerNav.removeClass('container');
             headerNav.addClass('positionFixed container-fluid');
             $('.nav-item>a').addClass('aColor666');
         }
-        else{
+        else {
             headerNav.removeClass('positionFixed');
             $('.nav-item>a').removeClass('aColor666');
 
         }
 
-
-
     });
+
+
+    //add to cart
+    let addCartClickHandler = function (e) {
+        e.preventDefault();
+        let cart = $('.fa-shopping-cart');
+        // let imgtodrag = $(this).parent().parent('.productBox').find('img').eq(0);
+        let imgtodrag = $(this);
+        if (imgtodrag) {
+            let imgclone = imgtodrag.clone()
+                .offset({
+                    top: imgtodrag.offset().top,
+                    left: imgtodrag.offset().left
+                })
+                .css({
+                    'opacity': '0.6',
+                    'position': 'absolute',
+                    'height': '38px',
+                    'width': '150px',
+                    'z-index': '150'
+                })
+                .appendTo($('body'))
+                .animate({
+                    'top': cart.offset().top /*+ 10*/,
+                    'left': cart.offset().left /*+ 10*/,
+                    'width': 20,
+                    'height': 25,
+                    'border-radius':'50%'
+                }, 1000, 'easeInOutExpo');
+
+            setTimeout(function () {
+                cart.effect("shake", {
+                    times: 2
+                }, 400);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                'height': 0
+            }, function () {
+                $(this).detach()
+            });
+        }
+
+
+    };
+
+
+    $('.addCart').on('click', addCartClickHandler);
+
 
 </script>
 </body>

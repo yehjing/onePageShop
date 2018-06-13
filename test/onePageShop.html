@@ -18,74 +18,38 @@
 
 
     <div id="asideList" class="asideList">
-        <div id="cartList" class="container">
-            <div class="heightBox">
-
-            </div>
-            <!--<div class="row text-center align-items-center my-1">-->
-                <!--<div class="col-sm-3"><img class="img-fluid " src="images/2_o3leks.webp" alt=""></div>-->
-                <!--<div class="col-sm-3">2</div>-->
-                <!--<div class="col-sm-3">$240</div>-->
-                <!--<div class="col-sm-3">X</div>-->
-            <!--</div>-->
-            <!--<div class="row text-center align-items-center my-1">-->
-                <!--<div class="col-sm-3"><img class="img-fluid " src="images/2_o3leks.webp" alt=""></div>-->
-                <!--<div class="col-sm-3">2</div>-->
-                <!--<div class="col-sm-3">$240</div>-->
-                <!--<div class="col-sm-3">X</div>-->
-            <!--</div>-->
-            <!--<div class="row text-center align-items-center my-1">-->
-                <!--<div class="col-sm-3"><img class="img-fluid " src="images/2_o3leks.webp" alt=""></div>-->
-                <!--<div class="col-sm-3">2</div>-->
-                <!--<div class="col-sm-3">$240</div>-->
-                <!--<div class="col-sm-3">X</div>-->
-            <!--</div>-->
-            <!--<div class="row text-center align-items-center my-1">-->
-                <!--<div class="col-sm-3"><img class="img-fluid " src="images/2_o3leks.webp" alt=""></div>-->
-                <!--<div class="col-sm-3">2</div>-->
-                <!--<div class="col-sm-3">$240</div>-->
-                <!--<div class="col-sm-3">X</div>-->
-            <!--</div>-->
-            <hr style="background: #fff;">
-            <div class="totalRow row text-center align-items-center my-1">
-                <div class="col-sm-3">總計 :</div>
-                <div class="totalQty col-sm-3">0</div>
-                <div class="totalPrice col-sm-3">$1,9200</div>
-                <div class="col-sm-3"></div>
+        <div id="fixCartBtn" class="fixCartBtn">
+            <div class="fixCartBtnBox">
+                <i id="end" class="fa fa-shopping-cart"></i>
+                <span class="item-number">0</span>
+                <span>items</span>
             </div>
         </div>
-    </div>
 
-    <div id="fixCartBtn" class="fixCartBtn">
-        <div class="fixCartBtnBox">
-            <i id="end" class="fa fa-shopping-cart"></i>
-            <span class="item-number">0</span>
-            <span>items</span>
-        </div>
     </div>
     <!--section welcome start-->
-    <section id="welcome" class="welcome">
+    <section class="welcome">
 
         <!--header start-->
-        <header id="headerNav" class="container d-flex align-items-center justify-content-center">
+        <header class="container d-flex align-items-center justify-content-center">
             <div class="row">
                 <div class="col-sm-12">
                     <nav class="pt-4">
                         <ul class="nav justify-content-center ">
                             <li class="nav-item">
-                                <a id="btnWelcome" class="nav-link aColorFFF transition" href="#welcome">Welcome</a>
+                                <a class="nav-link aColorFFF transition" href="#">Welcome</a>
                             </li>
                             <li class="nav-item">
-                                <a id="btnAbout" class="nav-link aColorFFF transition" href="#about">About Us</a>
+                                <a class="nav-link aColorFFF transition" href="#">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a id="btnShop" class="nav-link aColorFFF transition" href="#shop">Shop</a>
+                                <a class="nav-link aColorFFF transition" href="#">Shop</a>
                             </li>
                             <li class="nav-item">
-                                <a id="btnCollaborations" class="nav-link aColorFFF transition" href="#collaborations">Collaborations</a>
+                                <a class="nav-link aColorFFF transition" href="#">Collaborations</a>
                             </li>
                             <li class="nav-item">
-                                <a id="btnContact" class="nav-link aColorFFF transition" href="#contact">Contact Us</a>
+                                <a class="nav-link aColorFFF transition" href="#">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -117,7 +81,7 @@
 
 
     <!--section about start-->
-    <section id="about" class="about d-flex align-items-center">
+    <section class="about d-flex align-items-center">
         <div class="container transition">
             <div class="text-center">
                 <h2 class="mb-4">About Our Cases</h2>
@@ -145,7 +109,7 @@
 
 
     <!--section shop start-->
-    <section id="shop" class="shop">
+    <section class="shop">
 
         <div class="shopTitle text-center">
             <h2 class="mb-4">Shop Now</h2>
@@ -155,13 +119,13 @@
         <div class="container transition">
             <div class="row">
                 <!--商品列表 star-->
-                <div class=" col-lg-4 col-md-6 my-3">
+                <div class=" col-md-6 my-3">
                     <div class="productBox">
                         <img class="card-img-top" src="images/2_o3leks.webp" alt="Card image cap">
                         <div class="productInfor card-body pb-0">
                             <h5 class="productName card-title">【芬拿 FINCA LA NAVA】有機橄欖油洋芋片3包組合 180g x
                                 3(原味+迷迭香起士+煙燻甜椒)</h5>
-                            <span class="card-text">$ <span class="productPrice ">350</span> </span>
+                            <span class="productPrice card-text">$ 350</span>
                             <p class="productdescription card-text">超大材積TOSHIBA 東芝186公升變頻電冰箱 典雅銀 GR-M25TBZ(S)<br>
                                 壓縮機10年保固<br>
                                 靜音變頻馬達<br>
@@ -170,26 +134,26 @@
                                 大型蔬果箱/保鮮室設計
                             </p>
                             <div class="quantity d-flex align-items-center justify-content-between">
-                                <label for="">數量</label>
+                                <label for="quantity">數量</label>
                                 <div class="floatL">
-                                    <i class="minus fas fa-minus"></i>
-                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
-                                    <i class="plus fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                    <input id="quantity" class="text-center" type="text" value="1" maxlength="3">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" class="btn addCart">加入購物車</a>
+                            <a href="#" id="addCart" class="btn addCart">加入購物車</a>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-6 my-3">
+                <div class=" col-md-6 my-3">
                     <div class="productBox">
                         <img class="card-img-top" src="images/4_he64qr.webp" alt="Card image cap">
                         <div class="productInfor card-body pb-0">
                             <h5 class="productName card-title">【芬拿 FINCA LA NAVA】有機橄欖油洋芋片3包組合 180g x
                                 3(原味+迷迭香起士+煙燻甜椒)</h5>
-                            <span class="card-text">$ <span class="productPrice ">350</span> </span>
+                            <span class="productPrice card-text">$ 350</span>
                             <p class="productdescription card-text">超大材積TOSHIBA 東芝186公升變頻電冰箱 典雅銀 GR-M25TBZ(S)<br>
                                 壓縮機10年保固<br>
                                 靜音變頻馬達<br>
@@ -200,24 +164,24 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="minus fas fa-minus"></i>
-                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
-                                    <i class="plus fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                    <input class="text-center" type="text" value="1" maxlength="3">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" class="btn addCart ">加入購物車</a>
+                            <a href="#" class="btn addCart ">加入購物車</a>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-6 my-3">
+                <div class=" col-md-6 my-3">
                     <div class="productBox">
                         <img class="card-img-top" src="images/2_o3leks.webp" alt="Card image cap">
                         <div class="productInfor card-body pb-0">
                             <h5 class="productName card-title">【芬拿 FINCA LA NAVA】有機橄欖油洋芋片3包組合 180g x
                                 3(原味+迷迭香起士+煙燻甜椒)</h5>
-                            <span class="card-text">$ <span class="productPrice ">350</span> </span>
+                            <span class="productPrice card-text">$ 350</span>
                             <p class="productdescription card-text">超大材積TOSHIBA 東芝186公升變頻電冰箱 典雅銀 GR-M25TBZ(S)<br>
                                 壓縮機10年保固<br>
                                 靜音變頻馬達<br>
@@ -228,24 +192,24 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="minus fas fa-minus"></i>
-                                    <input id="" class="quantity text-center" type="text" value="1" maxlength="3">
-                                    <i class="plus fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                    <input id="" class="text-center" type="text" value="1" maxlength="3">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" class="btn addCart ">加入購物車</a>
+                            <a href="#" class="btn addCart ">加入購物車</a>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-6 my-3">
+                <div class=" col-md-6 my-3">
                     <div class="productBox">
                         <img class="card-img-top" src="images/2_o3leks.webp" alt="Card image cap">
                         <div class="productInfor card-body pb-0">
                             <h5 class="productName card-title">【芬拿 FINCA LA NAVA】有機橄欖油洋芋片3包組合 180g x
                                 3(原味+迷迭香起士+煙燻甜椒)</h5>
-                            <span class="card-text">$ <span class="productPrice ">350</span> </span>
+                            <span class="productPrice card-text">$ 350</span>
                             <p class="productdescription card-text">超大材積TOSHIBA 東芝186公升變頻電冰箱 典雅銀 GR-M25TBZ(S)<br>
                                 壓縮機10年保固<br>
                                 靜音變頻馬達<br>
@@ -256,24 +220,24 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="minus fas fa-minus"></i>
-                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
-                                    <i class="plus fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                    <input class="text-center" type="text" value="1" maxlength="3">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" class="btn addCart ">加入購物車</a>
+                            <a href="#" class="btn addCart ">加入購物車</a>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-6 my-3">
+                <div class=" col-md-6 my-3">
                     <div class="productBox">
                         <img class="card-img-top" src="images/4_he64qr.webp" alt="Card image cap">
                         <div class="productInfor card-body pb-0">
                             <h5 class="productName card-title">【芬拿 FINCA LA NAVA】有機橄欖油洋芋片3包組合 180g x
                                 3(原味+迷迭香起士+煙燻甜椒)</h5>
-                            <span class="card-text">$ <span class="productPrice ">350</span> </span>
+                            <span class="productPrice card-text">$ 350</span>
                             <p class="productdescription card-text">超大材積TOSHIBA 東芝186公升變頻電冰箱 典雅銀 GR-M25TBZ(S)<br>
                                 壓縮機10年保固<br>
                                 靜音變頻馬達<br>
@@ -284,24 +248,24 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="minus fas fa-minus"></i>
-                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
-                                    <i class="plus fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                    <input class="text-center" type="text" value="1" maxlength="3">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" class="btn addCart ">加入購物車</a>
+                            <a href="#" class="btn addCart ">加入購物車</a>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-6 my-3">
+                <div class=" col-md-6 my-3">
                     <div class="productBox">
                         <img class="card-img-top" src="images/4_he64qr.webp" alt="Card image cap">
                         <div class="productInfor card-body pb-0">
                             <h5 class="productName card-title">【芬拿 FINCA LA NAVA】有機橄欖油洋芋片3包組合 180g x
                                 3(原味+迷迭香起士+煙燻甜椒)</h5>
-                            <span class="card-text">$ <span class="productPrice ">350</span> </span>
+                            <span class="productPrice card-text">$ 350</span>
                             <p class="productdescription card-text">超大材積TOSHIBA 東芝186公升變頻電冰箱 典雅銀 GR-M25TBZ(S)<br>
                                 壓縮機10年保固<br>
                                 靜音變頻馬達<br>
@@ -312,14 +276,14 @@
                             <div class="quantity d-flex align-items-center justify-content-between">
                                 <label for="">數量</label>
                                 <div class="floatL">
-                                    <i class="minus fas fa-minus"></i>
-                                    <input class="quantity text-center" type="text" value="1" maxlength="3">
-                                    <i class="plus fas fa-plus"></i>
+                                    <i class="fas fa-minus"></i>
+                                    <input class="text-center" type="text" value="1" maxlength="3">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="productBottomBox card-footer">
-                            <a href="" class="btn addCart ">加入購物車</a>
+                            <a href="#" class="btn addCart ">加入購物車</a>
                         </div>
                     </div>
                 </div>
@@ -332,22 +296,22 @@
 
 
     <!--section collaborations start-->
-    <section id="collaborations" class="collaborations">
+    <section class="collaborations">
 
     </section>
     <!--section collaborations end-->
 
 
     <!--section contact start-->
-    <section id="contact" class="contact text-center">
+    <section class="contact text-center">
 
         <div class="contactText container ">
             <h2>Contact Us</h2>
             <p>For Fans and Fans-to-be</p>
             <p>
-                Email: cathy@xwriter.com <br>
-                地址：樹林市仁愛街3號1樓<br>
-                客服電話: 02-86859630
+                Email: jingworkjing@gmail.com <br>
+                地址：台北市信義區55號<br>
+                客服電話: 02-24666666
             </p>
         </div>
     </section>
@@ -356,7 +320,7 @@
 
     <!--footer start-->
     <footer class="text-center">
-        欣旺資訊股份有限公司 © 2018 All Rights Reserved.
+        YehJing © 2018 All Rights Reserved.
     </footer>
     <!--footer end-->
 
@@ -367,165 +331,34 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-<script
-        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
 
 <script>
 
-    let cartBtnClickHanlder = function () {
-        let duration = 500;
-        let asideList = $('#asideList');
-        let asideListWidth = asideList.css('width');
-        asideList.toggleClass('open');
-        if (asideList.hasClass('open')) {
-            asideList.animate({
-                right: '0px'
-            }, duration);
-        } else {
-            asideList.animate({
-                right: `-${asideListWidth}`
-            }, duration);
-        }
-    };
-    $('#fixCartBtn').on('click', cartBtnClickHanlder);
 
-    //who => 加減號
-    //when => click
-    //what => 按減 -1 , 按加 +1
+    // $(function(){
+    //
+    //     let duration = 300;
+    //     $('#fixCartBtn').on('click',function(){
+    //         let asideList = $('.asideList');
+    //         asideList.toggleClass('open');
+    //
+    //         if (asideList.hasClass('open')) {
+    //             asideList.stop(true).animate({
+    //                 right: '600px'
+    //             }, duration, 'easeOut');
+    //         } else {
+    //             asideList.stop(true).animate({
+    //                 right: '300px'
+    //             }, duration, 'easeIn');
+    //         }
+    //
+    //     });
+    // });
+    let abc = 'test';
+    $('#fixCartBtn').on('click',function(){
 
-    let minusClickHandler = function () {
-        let quantity = $(this).parent().find('.quantity');
-        // console.log(quantity.val());
-        if (parseInt(quantity.val()) > 1) {
-            quantity.val(parseInt(quantity.val()) - 1);
-        } else {
-            $(this).attr('disabled', 'disabled').css('color', '#b9b9b9')
-        }
-    };
-    let plusClickHandler = function () {
-        let quantity = $(this).parent().find('.quantity');
-        quantity.val(parseInt(quantity.val()) + 1);
-        $(this).parent().find('.minus').removeAttr('disabled').css('color', '#666');
-    };
+    })
 
-
-    $('.minus').on('click', minusClickHandler);
-    $('.plus').on('click', plusClickHandler);
-
-    /*--畫面滑動--*/
-
-    $('#btnWelcome').click(function () {
-        $('html,body').animate({scrollTop: $('#welcome').offset().top}, 1000);
-    });
-    $('#btnAbout').click(function () {
-        $('html,body').animate({scrollTop: $('#about').offset().top - 200}, 1000);
-    });
-    $('#btnShop').click(function () {
-        $('html,body').animate({scrollTop: $('#shop').offset().top}, 1000);
-    });
-    $('#btnContact').click(function () {
-        $('html,body').animate({scrollTop: $('#contact').offset().top}, 1000);
-    });
-
-
-    let headerNav = $('#headerNav');
-
-
-    $(window).scroll(function () {
-        let scrollNow = $(window).scrollTop();
-        // console.log(scrollNow);
-
-        if (scrollNow >= 500) {
-            headerNav.removeClass('container');
-            headerNav.addClass('positionFixed container-fluid');
-            $('.nav-item>a').addClass('aColor666');
-        }
-        else {
-            headerNav.removeClass('positionFixed');
-            $('.nav-item>a').removeClass('aColor666');
-
-        }
-
-    });
-
-
-    //add to cart animation
-    let addCartClickHandler = function (e) {
-        e.preventDefault();
-        let self = $(this);
-        let cart = $('.fa-shopping-cart');
-        // let imgtodrag = $(this).parent().parent('.productBox').find('img').eq(0);
-        let imgtodrag = $(this);
-        if (imgtodrag) {
-            let imgclone = imgtodrag.clone()
-                .offset({
-                    top: imgtodrag.offset().top,
-                    left: imgtodrag.offset().left
-                })
-                .css({
-                    'opacity': '0.6',
-                    'position': 'absolute',
-                    'height': '38px',
-                    'width': '150px',
-                    'z-index': '150'
-                })
-                .appendTo($('body'))
-                .animate({
-                    'top': cart.offset().top /*+ 10*/,
-                    'left': cart.offset().left /*+ 10*/,
-                    'width': 20,
-                    'height': 25,
-                    'border-radius':'50%'
-                }, 1000, 'easeInOutExpo');
-
-            setTimeout(function () {
-                cart.effect("shake", {
-                    times: 2
-                }, 400);
-            }, 1500);
-
-            imgclone.animate({
-                'width': 0,
-                'height': 0
-            }, function () {
-                $(this).detach()
-            });
-
-        }
-
-        //add to cart items++
-        function itemsplus(){
-            let totalNum = parseInt($(".item-number").text());
-            let qty = self.closest('.productBox').find('input');
-            let numQty = parseInt(qty.val());
-            // console.log(numQty);
-            totalNum += numQty;
-            $(".item-number , .totalQty").text(totalNum);
-        }
-        itemsplus();
-
-        let thisImg = self.closest('.productBox').find('img').attr('src');
-        // let imgHtml = '<img class="img-fluid " src="images/2_o3leks.webp" alt="">';
-        let thisQty = self.closest('.productBox').find('input').val();
-        let thisPrice = self.closest('.productBox').find('.productPrice').text();
-        let cartHtml = `<div class="row text-center align-items-center my-1"><div class="col-sm-3"><img class="img-fluid " src="${thisImg}" alt=""></div> <div class="col-sm-3">${thisQty}</div><div class="col-sm-3">$ ${thisPrice}</div><div class="col-sm-3">X</div></div>`;
-        let hrAndCount = `<hr style="background: #fff;"><div class="row text-center align-items-center my-1"><div class="col-sm-3">總計 :</div><div class="col-sm-3">8</div><div class="col-sm-3">$1,9200</div><div class="col-sm-3">X</div></div>`;
-        // console.log(thisImg);
-        // $('#cartList').prepend(cartHtml);
-        $('.heightBox').append(cartHtml);
-        // cartHtml.before('hr');
-
-
-    };
-
-
-
-
-
-
-    $('.addCart').on('click', addCartClickHandler);
 </script>
 </body>
 </html>

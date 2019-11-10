@@ -57,7 +57,7 @@ h1 {
 }
 /*----------section welcome----------*/
 section.welcome {
-    background: url("https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/1/photo-1456086272160-b28b0645b729_jljvrz.jpg") no-repeat 50% 50% fixed;
+    background: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat 50% 50% fixed;
     height: 760px;
     background-size: cover;
     position: relative;
